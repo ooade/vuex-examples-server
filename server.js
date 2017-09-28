@@ -52,7 +52,7 @@ app.get('/api/images', (req, res) =>
 		.then(images => res.json(images))
 )
 
-app.post('/api/delete/images', (req, res) => {
+app.delete('/api/images', (req, res) => {
 	Gallery.findById(req.body._id).then(image => {
 		cloudinary.v2.uploader.destroy(req.body.cloudinary_id, (err, result) => {
 			if (!err) {
