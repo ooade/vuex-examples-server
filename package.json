@@ -7,7 +7,7 @@
 		"dev": "NODE_ENV=development node server.js",
 		"start": "node server.js"
 	},
-	"author": "",
+	"author": "Ademola Adegbuyi<ooade96@gmail.com>",
 	"license": "ISC",
 	"dependencies": {
 		"body-parser": "^1.18.2",
